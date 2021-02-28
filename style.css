@@ -1,0 +1,67 @@
+body{
+    background-color: black;
+}
+/* 1 */
+#topBoxContainer{
+    background-image:url(img/milky.PNG) ;
+    margin: auto;
+    width: 550px;
+    height: 50px;
+    border: 10px solid rgb(238, 231, 231);
+    padding: 30px;
+    border-radius: 10px;
+}
+#score{
+    background-image:url(img/milky.PNG) ;
+    margin: auto;
+    width: 100px;
+    height: 30px;
+    border: 5px solid rgb(238, 231, 231);
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 30px;
+    color: rgb(65,255,0);
+}
+/* 2 */
+#imgBoxContainer{
+    background-image:url(img/milky.PNG) ;
+    margin: auto;
+    width: 550px;
+    border: 10px solid rgb(238, 231, 231);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#wrapper{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);  
+}
+
+.pics{
+    background-color:white;
+    height: 170px;
+    width: 170px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.img{
+    height: 100%;
+    width: 100%;
+}
+/* 3 */
+#guessBoxContainer{
+    background-image:url(img/milky.PNG) ;
+    margin: auto;
+    width: 550px;
+    height: 100px;
+    border: 10px solid rgb(238, 231, 231);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.inline{
+    display:inline-block;
+    margin-right:5px;
+}
