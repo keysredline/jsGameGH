@@ -11,16 +11,19 @@ body{
 #topBoxContainer{
     background-image:url(img/milky.PNG) ;
     margin: auto;
-    width: 550px;
-    height: 50px;
+    width: 610px;
+    height: 100px;
     border: 6px solid rgb(230, 16, 176);
-    padding: 30px;
+    /* padding: 30px; */
+
     border-radius: 10px 10px 0px 0px;
 }
 #score{
     background-image:url(img/milky.PNG) ;
     margin: auto;
-    width: 300px;
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 250px;
     height: 30px;
     border: 5px solid rgb(238, 231, 231);
     padding: 5px;
@@ -29,10 +32,14 @@ body{
     color: rgb(65,255,0);
     float: left;
     text-align: right;
+    position: absolute;
+    
 }
 #reac{
     background-image:url(img/milky.PNG) ;
     margin: auto;
+    margin-top: 20px;
+    margin-right: 10px;
     width: 200px;
     height: 30px;
     border: 5px solid rgb(238, 231, 231);
@@ -43,6 +50,32 @@ body{
     float: right;
     text-align: right;
 }
+
+#clrD{
+    margin-top: 15px;
+    position: relative;
+    z-index:2;
+    float: left;
+    padding-bottom: 10px;
+
+}
+#clrD1{
+    position: relative;
+    z-index:2;
+    margin-top: 2px;
+    float: left;
+    padding-bottom: 0px;
+    left: 230px;
+    /* clear: float; */
+}
+/* #clrD1{
+    position: relative;
+    z-index:2;
+    margin-top: 15px;
+    float: left;
+    padding-bottom: 0px;
+    left: 230px;
+} */
 /* 2 */
 #imgBoxContainer{
     background-image:url(img/milky.PNG) ;
@@ -75,14 +108,39 @@ body{
 #guessBoxContainer{
     background-image:url(img/milky.PNG) ;
     margin: auto;
-    width: 550px;
-    height: 100px;
+    width: 610px;
+    height: 160px;
     border: 6px solid rgb(13, 226, 216);
-    padding: 30px;
+    /* padding: 30px; */
     border-radius: 0px 0px 10px 10px;
 }
-
 .inline{
+    display:inline-block;
+    margin-top: 20px;
+    padding:4px;
+}
+#btn{
+    margin-left: 30px;
+}
+
+.answerButton{
+    background-image: url(img/btn.PNG);
+    margin:auto;
+    height:100px;
+    width:170px;
+    color: rgb(133, 11, 133);
+    font-size: 30px;
+}
+
+.playButton{
+    width: 610px;
+    height: 160px;
+    background-image: url(img/Dmd.gif),url(img/milky.png);
+    background-size: 155px, 155px;
+    font-size: 70px;
+    color: rgb(133, 11, 133);
+}
+/* .inline{
     display:inline-block;
     margin-right:5px;
 }
@@ -93,6 +151,5 @@ body{
     height:100px;
     width:170px;
     color: rgb(133, 11, 133);
-    font-size: 30px;
-
-}
+    font-size: 30px;  
+} */
