@@ -13,8 +13,8 @@ window.addEventListener('load',function(){
     counter = 0;
     countPoints=0;
     startGame=false;
-    fillerCard=["img/cc.png","img/cc1.png","img/cc2.png","img/cc3.png",
-    "img/cc4.png","img/cc5.png","img/cc6.png","img/cc7.png","img/cc8.png"];
+    fillerCard=["img/cc.PNG","img/cc1.PNG","img/cc2.PNG","img/cc3.PNG",
+    "img/cc4.PNG","img/cc5.PNG","img/cc6.PNG","img/cc7.PNG","img/cc8.PNG"];
     wrongChoice=["Goku","Izuka","Levi","Killua","Hinata","Ichigo","Kirito","Ryuk","Mikasa"];
 
     //set a Character Class with txt and image.src attributes
@@ -27,15 +27,15 @@ window.addEventListener('load',function(){
         }
     }
     //Create new class objects
-    charG0=new Character ("Asuna","img/asuna.png");
-    charG1=new Character ("Guts","img/berserk.png");
-    charG2=new Character ("Black Goku","img/bGoku.png");
-    charG3=new Character ("Ein","img/ein.png");
-    charG4=new Character ("Eren","img/eren.png");
-    charG5=new Character ("Hisoka","img/hisoka.png");
-    charG6=new Character ("Kikyo","img/kikyo.png");
-    charG7=new Character ("Rem","img/rem.png");
-    charG8=new Character ("Saber","img/saber.png");
+    charG0=new Character ("Asuna","img/asuna.PNG");
+    charG1=new Character ("Guts","img/berserk.PNG");
+    charG2=new Character ("Black Goku","img/bGoku.PNG");
+    charG3=new Character ("Ein","img/ein.PNG");
+    charG4=new Character ("Eren","img/eren.PNG");
+    charG5=new Character ("Hisoka","img/hisoka.PNG");
+    charG6=new Character ("Kikyo","img/kikyo.PNG");
+    charG7=new Character ("Rem","img/rem.PNG");
+    charG8=new Character ("Saber","img/saber.PNG");
 
     //set an Arr of Class Objects
     charG=[charG0,charG1,charG2,charG3,charG4,charG5,charG6,charG7,charG8];
