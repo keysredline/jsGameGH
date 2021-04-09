@@ -51,8 +51,17 @@ window.addEventListener('load',function(){
     playButton.innerHTML = "PLAY";
     document.getElementById('play').appendChild(playButton);
     playButton.addEventListener('click', start);
+
+    //hidden link to scratch game
+    scratch = document.getElementById('clrD1');
+    scratch.addEventListener('click', scratchPage)
 })
 
+// links to scratch game
+function scratchPage()
+{
+    location.href = "https://scratch.mit.edu/projects/421936681/";
+}
 //triggers value in order to start game 
 // removes start play button
 function start()

@@ -135,7 +135,7 @@ body{
 .playButton{
     width: 610px;
     height: 160px;
-    background-image: url(img/Dmd.gif),url(img/milky.png);
+    background-image: url(img/Dmd.gif),url(img/milky.PNG);
     background-size: 155px, 155px;
     font-size: 70px;
     color: rgb(133, 11, 133);
