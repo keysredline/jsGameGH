@@ -40,10 +40,9 @@ window.addEventListener('load',function(){
     //set an Arr of Class Objects
     charG=[charG0,charG1,charG2,charG3,charG4,charG5,charG6,charG7,charG8];
 
+    //grab image boxes and divs to be used as vars
     fillerImg = document.getElementsByClassName('img');
-
     scoreBoard= document.getElementById('score');
-    
     reactionBoard= document.getElementById('reac');
 
     //Game start button creation
@@ -54,6 +53,8 @@ window.addEventListener('load',function(){
     playButton.addEventListener('click', start);
 })
 
+//triggers value in order to start game 
+// removes start play button
 function start()
 {
     startGame=true;
@@ -62,8 +63,7 @@ function start()
 
 //func sets up filler images taken from Arr
 //while cycling them through the game board
-//timeout method was used to delay changes
-//.random method used to generate random int's
+//.random method used to generate random int's 0-8
 function imageShuffle()
 {
     for(let i =0; i < fillerCard.length; i++)
@@ -93,11 +93,15 @@ function guessChar()
     },1000)
     queuedImg.addEventListener('click', btnPop);
 
+    //sets var timer to current time
     timer = Date.now();
 }
 
 //switch statement used in order to randomly display buttons
 //in 3 button positions
+//Note: the element id's order from case 0-2
+//rng var used to enter the case's
+//rng vars used to populate objects name
 function btnPop()
 {   
     randomCounter=Math.floor(Math.random() * 3);
@@ -107,8 +111,11 @@ function btnPop()
     {
         case 0:
             buttonAssignment()
+            //grab a random class object from the charG arr
             button.innerHTML = charG[randomIndex2].name;
+            //populate the button within selected div
             document.getElementById('btn').appendChild(button);
+            //adds EL with a click event pointing to a func
             button.addEventListener('click', answerRight);
                     
             button1.innerHTML = wrongChoice[randomIndex3];
@@ -153,6 +160,7 @@ function btnPop()
     }  
 }
 
+//creates 3 buttons with a specified class name
 function buttonAssignment()
 {
     button = document.createElement('button');
@@ -163,6 +171,7 @@ function buttonAssignment()
     button2.className = 'answerButton';
 }
 
+//removes buttons after 1s of population
 function removeButton(){
     setTimeout(function(){
         button.remove();
@@ -171,6 +180,9 @@ function removeButton(){
     },1000)
 }
 
+//on a right answer
+//will cal reaction time, score + the bonus
+//display updated score and reaction time
 function answerRight()
 {
     reaction = Date.now() - timer;
@@ -182,6 +194,7 @@ function answerRight()
     removeButtonListener()
 }
 
+//display updated score on a wrong answer
 function answerWrong()
 {
     score-=400;
